@@ -9,7 +9,7 @@ const Navbar = props => {
                 <div className="nav__center__container">
                     <div className="logo__container">
                         {/* <img src=""></img> */}
-                        <h1>Danusia</h1>
+                        {/* <h1>Danusia</h1> */}
                     </div>
                     <div className="menu__holder">
                         <ul>

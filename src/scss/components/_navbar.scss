@@ -1,5 +1,5 @@
 .nav__wrapper {
-    height: 70px;
+    height: 110px;
 
     .nav__center__container {
         height: 100%;
@@ -10,8 +10,12 @@
         align-items: center;
 
         .logo__container {
-            background-image: url('../../assets/sztuka_trawienia_logo_horizontal.ai');
+            background-image: url('../../assets/d-logo.png');
             background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 170px;
+            height: 98%;
         }
 
         ul {
@@ -30,6 +34,10 @@
                     font-size: 22px;
                     cursor: pointer;
                 }
+            }
+
+            @media (max-width: 976px) {
+                display: none;
             }
         }
     }
