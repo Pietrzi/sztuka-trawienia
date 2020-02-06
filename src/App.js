@@ -12,20 +12,19 @@ class App extends React.Component {
     this.setState(prevState => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen }
     })
-    console.log("bla");
   }
 
 
   render() {
-    let sideDrawer;
+    // let sideDrawer;
 
-        if (this.state.sideDrawerOpen) {
-            sideDrawer = <SideDrawer />
-        }
+    //     if (this.state.sideDrawerOpen) {
+    //         sideDrawer = <SideDrawer show={this.state.sideDrawerOpen}/>
+    //     }
     return (
       <div className="App">
         <Navbar hamburgerHandler={this.drawerToggleClickHandler} />
-        {sideDrawer}
+        <SideDrawer show={this.state.sideDrawerOpen }/>
         <Header />
       </div>
     );
