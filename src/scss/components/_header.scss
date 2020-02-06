@@ -19,38 +19,40 @@
                 justify-content: flex-end;
                 align-items: center;
                 position: relative;
+                //z-index: 1;
 
                 .header__image {
                     height: 450px;
                     width: 550px;
-                    z-index: 10;
                     background-image: url('../../assets/_I1P1973-kopia.jpg');
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
+                    position: relative;
+                    //z-index: 3;
 
-                    &:before {
-                        content: "";
-                        width: 350px;
-                        height: 550px;
-                        z-index: 1;
-                        background: black;
-                        position: absolute;
-                        top: -50px;
-                        left: 50px;
-                    }
+                    // &:after {
+                    //     content: "";
+                    //     width: 350px;
+                    //     height: 550px;
+                    //     z-index: 2;
+                    //     background: black;
+                    //     position: absolute;
+                    //     top: -50px;
+                    //     left: 50px;
+                    // }
                 }
 
-                // &:before {
-                //     content: "";
-                //     z-index: -1;
-                //     width: 450px;
-                //     height: 550px;
-                //     background: darkgray;
-                //     position: relative;
-                //     top: 0px;
-                //     left: 100px;
-                // }
+                &:before {
+                    content: "";
+                    //z-index: -1;
+                    width: 420px;
+                    height: 510px;
+                    background: darkgray;
+                    position: absolute;
+                    top: -30px;
+                    left: 20px;
+                }
             }
 
             .header__info_container {
@@ -72,7 +74,7 @@
                 .title__bottom {
                     height: 1px;
                     width: 400px;
-                    border-bottom: 3px solid darkgray;
+                    border-top: 3px solid darkgray;
                     padding: 20px;
                 }
 
