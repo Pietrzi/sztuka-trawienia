@@ -2,9 +2,18 @@
 @import './components/header';
 @import './components/hamburger';
 @import './components/sidedrawer';
+@import './components/backdrop';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+#root {
+    width: 100%;
+}
+
+.App {
+    width: 100%;
 }
