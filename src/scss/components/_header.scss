@@ -25,6 +25,11 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: relative;
+
+                @media (max-width: 602px) {
+                    width: 100%;
+                    height: 100%;
+                }
             }
 
             &:before {
@@ -35,6 +40,15 @@
                 position: absolute;
                 top: -30px;
                 left: 20px;
+
+                @media (max-width: 602px) {
+                    display: none;
+                }
+            }
+
+            @media (max-width: 602px) {
+                height: calc(100vh - 80px);
+                width: 100%;
             }
         }
 
@@ -67,6 +81,19 @@
                 padding: 20px;
                 text-align: center;
             }
+
+            @media (max-width: 602px) {
+                height: calc(100vh - 80px);
+                width: 100%;
+                position: relative;
+                bottom: calc(100vh - 80px);
+            }
+        }
+
+        @media (max-width: 602px) {
+            width: 100%;
+            height: 100%;
+            display: block;
         }
     }
 }
